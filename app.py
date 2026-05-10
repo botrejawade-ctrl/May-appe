@@ -38,7 +38,7 @@ if api_key:
                 3. برنامج غذائي اقتصادي بمصادر بروتين رخيصة.
                 اجعل الأسلوب باللغة العربية ومحفزاً.
                 """
-                response = client.models.generate_content(model="gemini-2.0-flash", contents=[prompt, image])
+                response = client.models.generate_content(model="gemini-1.5-flash", contents=[prompt, image])", contents=[prompt, image])
                 st.markdown("---")
                 st.write(response.text)
 else:
